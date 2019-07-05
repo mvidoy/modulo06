@@ -1,8 +1,6 @@
 MODULO06: 3-Criando projeto
 yarn add react-native-cli
 npx react-native init modulo06
-yarn add jetifier -D
-npx jetify
 
 cd android
 ./gradlew clean
@@ -34,6 +32,16 @@ const tron = Reactotron.configure({ host: "192.168.0.35" })
     .useReactNative()
     .connect();
 
+MODULO06: 6-React Navigation
+yarn add react-navigation react-native-gesture-handler
+react-native link react-native-gesture-handler
 
+https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html
 
+Incluir as linhas recomendadas na documentação:
+C:\Users\osvaldo\gostack\modulo06\android\app\src\main\java\com\modulo06\MainActivity.java
 
+yarn add jetifier -D
+npx jetify
+
+react-native start run-android
