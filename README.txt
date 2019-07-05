@@ -53,3 +53,5 @@ MODULO06: 9-Estilizando formulário
 yarn add react-native-vector-icons
 react-native link react-native-vector-icons
 https://oblador.github.io/react-native-vector-icons/
+
+MODULO06: 10-Acessando API do Github
