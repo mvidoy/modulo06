@@ -45,3 +45,6 @@ yarn add jetifier -D
 npx jetify
 
 react-native start run-android
+
+MODULO06: 7-Styled Components
+yarn add styled-components
