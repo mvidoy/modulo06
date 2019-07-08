@@ -1,9 +1,10 @@
 package com.modulo06;
 
 import android.app.Application;
-
+//import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 import com.facebook.react.ReactApplication;
 import com.oblador.vectoricons.VectorIconsPackage;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -23,9 +24,8 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(new MainReactPackage(),
-            new VectorIconsPackage(),
-            new RNGestureHandlerPackage());
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new AsyncStoragePackage(), new VectorIconsPackage(),
+          new RNGestureHandlerPackage());
     }
 
     @Override

@@ -1,4 +1,5 @@
 MODULO06: 3-Criando projeto
+npm install -g react-native-cli
 yarn add react-native-cli
 npx react-native init modulo06
 
@@ -36,13 +37,32 @@ MODULO06: 6-React Navigation
 yarn add react-navigation react-native-gesture-handler
 react-native link react-native-gesture-handler
 
+yarn add jetifier
+npx jetify
+
+npm install @react-native-community/cli-platform-android
+
+MainApplication.java:
+//////////////////
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+
+@Override
+protected List<ReactPackage> getPackages() {
+ return Arrays.<ReactPackage>asList(
+ new RNGestureHandlerPackage()
+ );
+}
+
+         /////////////////////////////////
+manda um react-native link react-native-gesture-handler e um react-native run-ios
+** estas linhas são complementares àquelas que os Docs do RNGH pedem para incluir
+
 https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html
 
 Incluir as linhas recomendadas na documentação:
 C:\Users\osvaldo\gostack\modulo06\android\app\src\main\java\com\modulo06\MainActivity.java
 
-yarn add jetifier -D
-npx jetify
+yar
 
 react-native start run-android
 
@@ -55,3 +75,10 @@ react-native link react-native-vector-icons
 https://oblador.github.io/react-native-vector-icons/
 
 MODULO06: 10-Acessando API do Github
+yarn add axios
+
+MODULO06: 13-Salvando no storage
+ "@react-native-community/async-storage": "^1.5.0",
+yarn add @react-native-community/async-storage
+react-native link @react-native-community/async-storage
+
